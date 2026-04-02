@@ -1,0 +1,5 @@
+{
+  "name": "AI PDF Highlighter",
+  "description": "A PDF reader that uses AI to automatically identify and highlight key information.",
+  "requestFramePermissions": []
+}
