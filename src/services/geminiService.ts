@@ -14,7 +14,7 @@ export async function analyzePdfText(text: string): Promise<HighlightInfo[]> {
   }
   
   const response = await ai.models.generateContent({
-    model: "gemini-2.0-flash-lite",
+    model: "gemini-2.5-flash-lite",
     contents: `Extrais ces champs du texte de facture/commande. Réponds UNIQUEMENT en JSON valide, tableau d'objets {text, category}.
 Champs : Date de livraison, Numéro de commande (commence par "47"), Conditions de paiement, Total HT, Frais de livraison, Prix unitaire, Incoterms, Adresse de livraison.
 Max 15 résultats. Texte : ${text.substring(0, 3000)}`,
